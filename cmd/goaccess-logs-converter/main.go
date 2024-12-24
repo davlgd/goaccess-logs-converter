@@ -38,7 +38,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	if err := tools.Process(cfg); err != nil {
+	if err := tools.ProcessSSE(cfg); err != nil {
 		fmt.Printf("Process error: %v\n", err)
 		os.Exit(1)
 	}
