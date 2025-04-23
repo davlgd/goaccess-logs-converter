@@ -7,7 +7,8 @@ type LogEntry struct {
 	} `json:"source"`
 	HTTP *struct {
 		Request struct {
-			Method, Path string `json:"method,path"`
+			Method string `json:"method"`
+			Path   string `json:"path"`
 		} `json:"request"`
 		Response struct {
 			StatusCode int `json:"statusCode"`
